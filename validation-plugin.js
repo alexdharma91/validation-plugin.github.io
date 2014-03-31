@@ -110,8 +110,6 @@
         }
     };
 
-
-
     validateForm = function (form, settings) {
         var result = true;
         form.find("input").each(function (i, el) {
@@ -136,7 +134,6 @@
             for (var i in validations) {
                 if (typeof validationRules[i] != "undefined") {
                  if ((validationRules[i](input.val(), validations[i]) == false) || (validationRules[i](input.val(), validations[i])) == -1) {
-                //    if ((this[i](input.val(), validations[i]) == false) || (this[i](input.val(), validations[i])) == -1) {
                         result = false;
                     }
                 }
